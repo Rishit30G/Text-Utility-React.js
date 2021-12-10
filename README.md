@@ -1,2 +1,3 @@
 # React.js
-This is repo for react.js 
+Checkout the [master](https://github.com/Rishit30G/React.js/tree/master) branch
+
