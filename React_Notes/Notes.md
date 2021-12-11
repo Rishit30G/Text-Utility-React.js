@@ -35,5 +35,16 @@
 ## Hook in React
 ### Hook allows you to use state and other react features with a function-based component,  that is without writing a class.
 
+## Class-based component.
+### Class components are basically ES7 Classes. A class Component can also receive props as Input and return HTML. A class component can also maintain some information that is private to that component and can use that information to describe the user interface. 
 
+## Difference between Functional and Class Component
+
+Functional Component | Class Component 
+------------- | -------------
+Simple Function  | More feature rich 
+Use function component as much as possible  | Mainatin their own private data - state 
+Absence of 'this' key word  | Complex UI logic 
+Mainly responsible for UI  | Provide lifecycle hooks
+Stateless/Dumb/Presentational  | Stateful/Smart/Container
 ### [Resource Link](https://www.codewithharry.com/videos/react-tutorials-in-hindi-1)
