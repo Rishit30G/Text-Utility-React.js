@@ -32,9 +32,6 @@
 
 ### A state depicts the local information of a Component. For example: If we write something in our text box it will be the state of our object for that specific point in time. The state is the changeable variable of our app. Whenever the state object changes, the component re-render itself.
 
-## Hook in React
-### Hook allows you to use state and other react features with a function-based component,  that is without writing a class.
-
 ## Class-based component.
 ### Class components are basically ES7 Classes. A class Component can also receive props as Input and return HTML. A class component can also maintain some information that is private to that component and can use that information to describe the user interface. 
 
