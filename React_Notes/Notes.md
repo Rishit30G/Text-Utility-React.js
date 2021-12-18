@@ -47,4 +47,78 @@ Use function component as much as possible  | Mainatin their own private data - 
 Absence of 'this' key word  | Complex UI logic 
 Mainly responsible for UI  | Provide lifecycle hooks
 Stateless/Dumb/Presentational  | Stateful/Smart/Container
+
+
+## Map() method
+### The map() method is the most commonly used function to iterate over an array of data in JSX. You can attach the map() method to the array and use a callback function that gets called for each iteration.
+
+## ComponentDidMount() Method
+### This method gets invoked once the component has been rendered. As a result, the constructor of our application gets executed first, followed by the ‘render method,’ and at last, the ComponentDidMount() method is invoked. ComponentDidMount() is a lifecycle method.
+
+## Using Async and Await
+### Async keyword is used to make a function asynchronous. Async can wait inside its body to resolve for some of the promises. The await keyword will stop the execution until a defined task is completed. In our case, it will wait for the promise to be resolved. 
+
+## Prop types in Class-Based Component
+### React has a mechanism for props authentication called prop types. As some functions need compulsory arguments, similarly in react components might require a prop to be defined. Otherwise, it won’t render properly.
+
+## Static variable
+
+### The static variable can be used to refer to the common property of all objects. Static is the property that belongs to the class only. Earlier in React, we used to define props outside of the class. But now we will be defining them inside the class by using the static variable.
+
+## React Component Lifecycle Method
+Component LifeCycle: The series of events that happens from the mounting of a React Component to its unmounting.
+- Mounting: Birth of your component
+- Update: Growth of your component
+- Unmount: Death of your component
+
+## Methods in React Component Lifecycle
+
+- Render() Method: It is used to render the HTML of the component in React. It is used to render the DOM while using the class-based component. Remember, Inside the Render method we cannot modify the state in React.
+- ComponentDidMount(): This method executes after the component output has been rendered to the DOM. We have already used this method in the NewsMonkey Application for fetching the Data from the API. You can also use setState, async, and await methods in ComponentDidMount().
+- ComponentDidUpdate(): This method is used to update the DOM in response to the prop or state changes. Remember that props are read-only. That’s why here, ‘changes in the prop’ means that it can be received again in the component.
+- ComponentWillUnmount(): It is invoked just before the component is unmounted and destroyed. It is usually used to perform cleanups.
+
+
+### While Mounting
+- In this case, the ‘Constructor’ runs first after that the ‘render’ lifecycle method is invoked. After that, React will update the DOM and finally, the ComponentDidMount will be executed.
+
+### While Updating
+- The three possible ways in which one can update the React component are:
+
+### New props
+- Using setState
+- Using forceupdate()
+- After updating the component, the render method will be executed at the start. After that, The react Updates the  ‘DOM and references’ and in the end, the ComponentDidUpdate method will be run.
+
+### While Unmounting
+- At the time of unmounting, only the ComponentWillUnmount method will be executed and the component will be unmounted.
+
+
+## What are React Hooks?
+- React Hooks allows us to use the features of class-based components in Function-based Components.
+- It even allows us to use ‘state’ and other React features without writing a class. 
+- For example: Earlier, we were using ‘this.state’ whenever we needed to access the state but now we can use the ‘UseState’ Hook.
+- Hooks are the functions which “hook into” react state and lifecycle features from the function components.
+
+
+## Commonly used React Hooks
+
+- **UseState**: It is used to update the state and to set the initial value of the state. The ‘useState’ is similar to ‘this.setState’ in class. The useState returns a pair where the first element is the current state value/initial value, and the second one is a function that allows us to update it. For example: If we create a text variable and we want to make it a part of the state, then we can return two elements (like ‘text’ and ‘set text’) from the state hook. 
+- **Use Effect**: It is used to perform the side effect. For example: If we want to perform a certain task when the content of our application is updated, then we can take the help of the UseEffect hook. In other words, Effects Hooks are similar to componentDidMount(), componentDidUpdate(), and componentWillUnmount() lifecycle methods. 
+Use Context
+This hook allows us to use the context API. Context API allows us to share data within its component tree without passing through props. In short, it helps in removing prop drilling from the application. Prop drilling is a situation when the same data is being sent at every level due to requirements. We will be discussing the Context hook in detail later in this React Course.
+- **UseRef**: It returns a mutable reference object, which has a .current property.  It can be used to point an element inside a DOM. In most simple words, it is a holder which can store an element of the DOM inside its .current property.
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### [Resource Link](https://www.codewithharry.com/videos/react-tutorials-in-hindi-1)
